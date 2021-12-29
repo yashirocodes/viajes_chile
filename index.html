@@ -9,15 +9,97 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
 </head>
 <body>
-
-
+    <!-- NAVVAR MENU -->
+    <nav class="navbar navbar-expand-lg navbar-light bg__nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo__nav" src="./assets/img/logo_nav_black.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="#">Destinos</a>
+              <a class="nav-link" href="#">Qué hacer</a>
+              <a class="nav-link" href="#">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- END OF NAVBAR -->
+    <!-- CAROUSEL -->
+    <header class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/carousel_1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="h3">San Pedro de Atacama</h5>
+                  <p>Culturas ancestrales y viajeros de todo el mundo se mezclan en este antiguo pueblo con calles de tierra y casas de adobe.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/carousel_2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="h2">Frutillar</h5>
+                  <p>Piérdete en Frutillar, en su playa de arena negra y aguas cristalinas. Pasea por sus calles limpias, ordenadas, rodeadas de jardines de rosas y dalias. Maravíllate con sus típicas construcciones de madera.  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/carousel_3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="h2">Torres del Paine</h5>
+                  <p>El cinematográfico paisaje de la octava maravilla del mundo te dejará con la boca abierta.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </header>
+    <!-- END OF CAROUSEL -->
+    <!-- CARD + FORM -->
+    <section class="container mt-2">
+        <div class="row">
+            <article class="col-8">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                      <div class="col-md-6">
+                        <img src="./assets/img/img_card_featured.png" class="card-img rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h5 class="card-title">Visita Valle del Elqui | <strong class="text-danger">Destino Destacado</strong></h5>
+                          <p class="card-text">Visita uno de los valles más importantes de Chile, que destaca por la producción de vino Syrah y Carmenére.</p>
+                          <p class="card-text"><small class="text-muted">Actializado hace 6 minutos . . .</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </article>
+            <article class="col-4"></article>
+        </div>
+    </section>
     <!-- Scripts -->
     <!-- BOOTSTRAP SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- MAIN JS -->
     <script src="./assets/js/main.js"></script>
-    
+
 </body>
 </html>
