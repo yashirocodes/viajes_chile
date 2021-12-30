@@ -13,23 +13,23 @@
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/47d0fd349e.js" crossorigin="anonymous"></script>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/favicon_logo.svg" type="image/x-icon">
 </head>
 <body>
-      
+      <!-- bg-transparent -->
     <!-- NAVVAR MENU -->
-    <nav class="navbar navbar-expand-lg navbar-light bg__nav sticky-top ">
+    <nav class="navbar navbar-expand-lg navbar-light bg__nav sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="logo__nav" src="./assets/img/logo_nav_black.png" alt=""></a>
+          <a class="navbar-brand logo__txt fs-4" href="#"><img class="logo__nav" src="./assets/img/favicon.svg" alt="">Viajes Chile</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              <a class="nav-link" href="#">Destinos</a>
-              <a class="nav-link" href="#">Qué hacer</a>
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link active fw-bold" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link fw-bold" href="#destinos">Destinos</a>
+              <a class="nav-link fw-bold" href="#">Qué hacer</a>
+              <a class="nav-link fw-bold" href="#">Contacto</a>
             </div>
           </div>
         </div>
@@ -79,37 +79,43 @@
     <!-- END OF CAROUSEL -->
     <!-- CARD + FORM -->
     <section class="container my-4">
-        <div class="row">
-            <article class="col-8">
-                <div class="card mb-3">
-                    <div class="row g-0">
-                      <div class="col-md-6">
-                        <img src="./assets/img/img_card_featured.png" class="card-img rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-6">
-                        <div class="card-body">
-                          <h5 class="card-title">Visita Valle del Elqui | <strong class="text-danger">Destino Destacado</strong></h5>
-                          <p class="card-text">Visita uno de los valles más importantes de Chile, que destaca por la producción de vino Syrah y Carmenére.</p>
-                          <p class="card-text"><small class="text-muted">Actializado hace 6 minutos . . .</small></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </article>
-            <article class="col-4">
-                <div class="card border-0 d-flex align-items-center">
-                    <div class="card-body d-flex flex-column">
-                      <h5 class="card-title text-center">¿Para dónde nos vamos?</h5>
-                      <p class="card-text text-center">Ingresa tu mail para no perderte tu siguiente destino.</p>
-                      <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="text" class="form-control" placeholder="TuCorreo@ejemplo.com" aria-label="Username" aria-describedby="basic-addon1">
-                      </div>
-                      <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Aprieta acá para confirmar.">Enviar</a>
-                    </div>
-                  </div>
-            </article>
-        </div>
+      <section class="row">
+        <article class="col-4">
+          <div class="card">
+            <div class="card-body bg-warning">
+              <h2 class="text-center"><i class="fas fa-users text-light"></i></h2>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Bienvenidos a Viajes Chile </h5>
+              <h6 class="card-subtitle mb-2 text-muted">Somos tu mejor opción</h6>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nihil mollitia accusantium sequi nulla accusamus cum vel numquam cupiditate repellat est vero incidunt tempore facere ea enim laboriosam aliquid, ipsum consequuntur tempora! Inventore, assumenda cupiditate alias corrupti voluptas hic eum.</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Nuestra Misión </h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim labore beatae, laudantium voluptate at expedita iusto quaerat vel, earum dignissimos quam velit facere voluptatibus quidem tempora modi esse consequuntur saepe sunt laboriosam distinctio! Officia possimus ea, vero dolores labore aspernatur iure enim atque reiciendis temporibus! Harum hic officia vel voluptates!</p>
+            </div>
+            <div class="card-body bg-success">
+              <h2 class="text-center"><i class="fas fa-meteor text-light"></i></h2>
+            </div>
+          </div>
+        </article>
+        <article class="col-4">
+          <div class="card">
+            <div class="card-body bg-danger">
+              <h2 class="text-center"><i class="fas fa-handshake text-light"></i></h2>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Bienvenidos a Viajes Chile </h5>
+              <h6 class="card-subtitle mb-2 text-muted">Somos tu mejor opción</h6>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nihil mollitia accusantium sequi nulla accusamus cum vel numquam cupiditate repellat est vero incidunt tempore facere ea enim laboriosam aliquid, ipsum consequuntur tempora! Inventore, assumenda cupiditate alias corrupti voluptas hic eum.</p>
+            </div>
+          </div>
+        </article>
+      </section>
     </section>
     <!-- END CARD + FORM -->
     <!-- BAR -->
@@ -121,13 +127,14 @@
                 <p class="m-0 fw-bold fs-4 ps-3">EN VERANO</p>
                 <i class="fas fa-cloud-showers-heavy icon-h ps-3"></i>
                 <p class="m-0 fw-bold fs-4 ps-3">EN INVIERNO CON</p>
-                <img class="img_bar" src="/assets/img/logo_white.png" alt="">
+                <img class="img_bar" src="/assets/img/favicon.svg" alt="">
+                <p class="logo__txt m-0 ms-2 fs-3">Viajes Chile</p>
             </div>
         </div>
     </div>
     <!-- END BAR -->
     <!-- FIRST SECTION FOR DESTINOS -->
-    <section class="container mt-4">
+    <section class="container mt-4" id="destinos">
         <div class="row">
             <div class="col-12"><h2 class="text-center fw-bolder fs-1">Destinos Destacados</h2></div>
             <div class="col-4">
@@ -160,12 +167,144 @@
                 </div>
               </div>
         </div>
-            <div class="col-4">
-              	
+        <!-- INICIO DE ACORDION -->
+            <div class="col-12 mt-5">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header " id="headingOne">
+                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      
+                      <h3 class="">Destacados | <strong>Norte</strong> <i class="ms-3 fas fa-map-marked-alt"></i></h3> 
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="card">
+                            <img src="./assets/img/img_toggle_1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="card">
+                            <img src="./assets/img/img_toggle_2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <h3 class="">Destacados | <strong>Centro</strong> <i class="ms-1 fas fa-map-marked-alt"></i></h3>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="card">
+                            <img src="./assets/img/img_toggle_3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="card">
+                            <img src="./assets/img/img_toggle_5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <h3 class="">Destacados | <strong>Sur</strong> <i class="ms-5 fas fa-map-marked-alt"></i></h3>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="card">
+                            <img src="./assets/img/img_toggle_6.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="card">
+                            <img src="./assets/img/img_toggle_2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- FINAL DE ACORDION -->
         </div>
     </section>
     <!-- END OF DESTINOS -->
+    <!-- INICIO QUÉ HACER -->
+      <section class="container mt-5">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center fw-bolder py-4">Qué Hacer</h2>
+          </div>
+          <div class="col-8">
+            <div class="card mb-3 border-0">
+              <img src="./assets/img/card_que_hacer_1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Termas Geométricas</h5>
+                <p class="card-text">A 16 km de Coñaripe, es un trayecto que consta de 2 horas de viaje. Es uno de los pocos lugares termales que además de ofrecer experiencias diurnas, también abre su puertas de noche. Su ubicación se encuentra en uno de los lugares más hermosos del sur de Chile, en los bosques nativos del Parque Nacional Villarrica.</p>
+                <p class="card-text"><small class="text-muted">Termas | Sur de Chile</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card border-0">
+              <div class="card-body">
+                <h5 class="card-title">Termas geométricas</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Pucón | Chile</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link ">Buscar mejor opción</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- FIN QUE HACER -->
     <!-- Scripts -->
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
