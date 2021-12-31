@@ -26,6 +26,10 @@
 .navbar-collapse{
     padding-right: 13rem;
 }
+/*modal popup*/
+.modal-header{
+    background: none !important;
+}
 /*CAROUSEL*/
 
 .text_shadow{

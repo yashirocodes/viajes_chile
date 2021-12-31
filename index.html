@@ -16,7 +16,21 @@
     <link rel="shortcut icon" href="./assets/img/favicon_logo.svg" type="image/x-icon">
 </head>
 <body>
-      <!-- bg-transparent -->
+    <!-- WELCOME MODAL -->
+    <div class="modal fade my__modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-transparent">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-content">
+            <div class="card">
+              <img src="./assets/img/img__modal.png" class="card-img-top" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- NAVVAR MENU -->
     <nav class="navbar navbar-expand-lg navbar-light bg__nav sticky-top">
         <div class="container-fluid">
@@ -36,7 +50,7 @@
       </nav>
     <!-- END OF NAVBAR -->
     <!-- CAROUSEL -->
-    <header class="container">
+    <header class="container d-none d-lg-block">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -81,6 +95,12 @@
     <!-- ABOUT US -->
     <section class="container my-4">
       <section class="row">
+        <div class="col-12">
+          <div class="container d-flex flex-column">
+            <h1 class="logo__txt text-center" onclick="myFunction(this, 'red')">Viajes Chile</h1>
+          <h2 class="text-center fw-light fs-5">¿Quienes Somos?</h2>
+          </div>
+        </div>
         <article class="col-12 col-lg-4">
           <div class="card my-3">
             <div class="card-body bg-warning d-none d-lg-block">
@@ -110,9 +130,8 @@
               <h2 class="text-center"><i class="fas fa-handshake text-light"></i></h2>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Bienvenidos a Viajes Chile </h5>
-              <h6 class="card-subtitle mb-2 text-muted">Somos tu mejor opción</h6>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nihil mollitia accusantium sequi nulla accusamus cum vel numquam cupiditate repellat est vero incidunt tempore facere ea enim laboriosam aliquid, ipsum consequuntur tempora! Inventore, assumenda cupiditate alias corrupti voluptas hic eum.</p>
+              <h5 class="card-title">Visión</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nihil mollitia accusantium sequi nulla accusamus cum vel numquam cupiditate repellat est vero incidunt tempore facere ea enim laboriosam aliquid, ipsum consequuntur tempora! Inventore, assumenda cupiditate alias corrupti voluptas hic eum. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
         </article>
@@ -137,14 +156,14 @@
     <!-- FIRST SECTION FOR DESTINOS -->
     <section class="container mt-4" id="destinos">
         <div class="row">
-            <div class="col-12"><h2 class="text-center fw-bolder fs-1">Destinos Destacados</h2></div>
+            <div class="col-12"><h2 class="text-center fw-bolder fs-1" onclick="myFunction(this, 'red')">Destinos Destacados</h2></div>
             <div class="col-12 col-md-6 col-xl-3 col-xl-3">
                 <div class="card">
                     <img src="./assets/img/destinos_1.png" class="card-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Sur de Chile | <strong class="txt_blue">Chiloé</strong> </h5>
-                      <p class="card-text">Tierra de mitos, leyendas, tradiciones y una gastronomía incomparable. Chiloé es una isla de sorprendente riqueza cultural y natural. riqueza cultural y natural</p>
-                      <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Go somewhere</a>
+                      <h5 class="card-title title-destinos">Sur de Chile | <strong class="txt_blue">Chiloé</strong> </h5>
+                      <p class="card-text card-text-destinos">Tierra de mitos, leyendas, tradiciones y una gastronomía incomparable. Chiloé es una isla de sorprendente riqueza cultural y natural. riqueza cultural y natural</p>
+                      <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Descubrir Lugar">Explorar</a>
                     </div>
                   </div>
             </div>
@@ -152,19 +171,19 @@
               <div class="card">
                   <img src="./assets/img/destinos_2.png" class="card-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">Centro de Chile | <strong class="txt_blue">Valparaíso</strong> </h5>
-                    <p class="card-text">Cautívate con la loca arquitectura de la Ciudad Patrimonio de la Humanidad. Recorre a pie sus estrechas calles, infinitas escaleras. infinitas escaleras</p>
-                    <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Go somewhere</a>
+                    <h5 class="card-title title-destinos">Centro de Chile | <strong class="txt_blue">Valparaíso</strong> </h5>
+                    <p class="card-text card-text-destinos">Cautívate con la loca arquitectura de la Ciudad Patrimonio de la Humanidad. Recorre a pie sus estrechas calles, infinitas escaleras. infinitas escaleras</p>
+                    <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Descubrir Lugar">Explorar</a>
                   </div>
                 </div>
           </div>
           <div class="col-12 col-md-6 col-xl-3">
             <div class="card">
                 <img src="./assets/img/destinos_3.png" class="card-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Norte de Chile | <strong class="txt_blue">Bahía Inglesa</strong></h5>
-                  <p class="card-text">Si buscas playas tranquilas, arenas blancas y pozas de aguas color turquesa para relajarte, este lugar es ideal para ti.</p>
-                  <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Go somewhere</a>
+                <div class="card-body" >
+                  <h5 class="card-title title-destinos">Norte de Chile | <strong class="txt_blue">Bahía Inglesa</strong></h5>
+                  <p class="card-text card-text-destinos">Si buscas playas tranquilas, arenas blancas y pozas de aguas color turquesa para relajarte, este lugar es ideal para ti.</p>
+                  <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Descubrir Lugar">Explorar</a>
                 </div>
               </div>
         </div>
@@ -172,9 +191,9 @@
           <div class="card">
               <img src="./assets/img/destinos_3.png" class="card-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Patagonia Chile | <strong class="txt_blue">Punta Arenas</strong></h5>
-                <p class="card-text">Si buscas playas tranquilas, arenas blancas y pozas de aguas color turquesa para relajarte, este lugar es ideal para ti.</p>
-                <a href="#" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Go somewhere</a>
+                <h5 class="card-title title-destinos">Patagonia Chile | <strong class="txt_blue">Punta Arenas</strong></h5>
+                <p class="card-text card-text-destinos">Si buscas playas tranquilas, arenas blancas y pozas de aguas color turquesa para relajarte, este lugar es ideal para ti.</p>
+                <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Descubrir Lugar">Explorar</a>
               </div>
             </div>
       </div>
@@ -185,7 +204,7 @@
                   <h2 class="accordion-header " id="headingOne">
                     <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       
-                      <h3 class="">Destacados | <strong>Norte</strong> <i class="ms-3 fas fa-map-marked-alt"></i></h3> 
+                      <span class="fs-3 m-0"> Destacados | <strong>Norte</strong> <i class="ms-3 fas fa-map-marked-alt"></i></span> 
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -218,7 +237,7 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <h3 class="">Destacados | <strong>Centro</strong> <i class="ms-1 fas fa-map-marked-alt"></i></h3>
+                      <span class="fs-3 m-0">Destacados | <strong>Centro</strong> <i class="ms-1 fas fa-map-marked-alt"></i></span>
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -251,7 +270,7 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      <h3 class="">Destacados | <strong>Sur</strong> <i class="ms-5 fas fa-map-marked-alt"></i></h3>
+                      <span class="fs-3 m-0">Destacados | <strong>Sur</strong> <i class="ms-5 fas fa-map-marked-alt"></i></span>
                     </button>
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -291,7 +310,7 @@
       <section class="container mt-5" id="quehacer">
         <div class="row">
           <div class="col-12">
-            <h2 class="text-center fw-bolder py-4">Qué Hacer</h2>
+            <h2 class="text-center fw-bolder py-4" onclick="myFunction(this, 'red')">Qué Hacer</h2>
           </div>
           <div class="col-12 col-lg-8">
             <div class="card mb-3 border-0">
@@ -309,7 +328,7 @@
                 <h5 class="card-title">Termas geométricas</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Pucón | Chile</h6>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary" id="buscar">
                   Buscar la mejor opción
                 </button>
               </div>
@@ -317,26 +336,6 @@
           </div>
         </div>
       </section>
-      <!-- MODAL -->
-              <!-- Modal -->
-              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      <!-- END MODAL -->
     <!-- FIN QUE HACER -->
     <!-- INICIO FORM -->
     <div class="container" id="contacto">
@@ -351,10 +350,10 @@
             
             <div class="container d-flex justify-content-center">
               
-              <a href=""><i class="fab fa-facebook-square text-light footer_icon"></i></a>
-              <a href=""><i class="fab fa-twitter-square text-light footer_icon"></i></a>
-              <a href=""><i class="fab fa-instagram-square text-light footer_icon"></i></a>
-              <a href=""><i class="fab fa-whatsapp-square text-light footer_icon"></i></a>
+              <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square text-light footer_icon"></i></a>
+              <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square text-light footer_icon"></i></a>
+              <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram-square text-light footer_icon"></i></a>
+              <a href="https://whatsapp.com/" target="_blank"><i class="fab fa-whatsapp-square text-light footer_icon"></i></a>
           </div>
         </div>
         <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
@@ -368,8 +367,8 @@
             <li class="list-group-item"><span class="fw-bold fs-4">Enlaces de interes</span></li>
             <li class="list-group-item"><a href="https://www.chile.travel/" target="_blank" class="text-decoration-none text-light">Travel Chile</a></li>
             <li class="list-group-item"><a href="https://www.sernatur.cl/" target="_blank" class="text-decoration-none text-light">Sernatur</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-light">Turismo Chile</a></li>
-            <li class="list-group-item"><a href="#" class="text-decoration-none text-light">Patagonía Magica</a></li>
+            <li class="list-group-item"><a href="https://chileestuyo.cl/" target="_blank" class="text-decoration-none text-light">Chile es tuyo</a></li>
+            <li class="list-group-item"><a href="https://patagoniamagica.com/" target="_blank" class="text-decoration-none text-light">Patagonía Magica</a></li>
           </ul>
         </div>
       </div>
@@ -382,6 +381,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- MAIN JS -->
     <script src="./assets/js/main.js"></script>
-
+    <!-- SweetAlert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
