@@ -16,16 +16,21 @@
 .bg__nav{ background-color: #F1F1F1;}
 .s-bar{ background-color: #CC485E;}
 .txt_blue{color: #364BE0;}
+/*NAVIGATOR*/
 .logo__nav{
     height: 2.5rem;
 }
 .navbar-brand{
-    padding-left: 13rem;
+    padding-left: 5.5rem;
 }
 .navbar-collapse{
     padding-right: 13rem;
 }
+/*CAROUSEL*/
 
+.text_shadow{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
 .icon-h{
     font-size: 2rem;
 }
@@ -50,4 +55,21 @@
 }
 .logo__txt{
     font-family: 'Pacifico', cursive;
+}
+
+
+/*FOOTER*/
+.footer_icon{
+    font-size: 3.5rem;
+    padding: 2rem 1.5rem;
+
+}
+.logo__footer{
+    height: 8rem;
+    padding: 2rem 0;
+}
+.list-group-item{
+    background: none !important;
+    color: white !important;
+    border: none !important;
 }
