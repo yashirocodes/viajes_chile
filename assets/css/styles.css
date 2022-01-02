@@ -12,9 +12,18 @@
     font-family: 'Oxygen', sans-serif;
 }
 /*BODY*/
+/*FONT TEXT*/
+.logo__txt{
+    font-family: 'Pacifico', cursive;
+    user-select: none;
+}
+h2{
+    user-select: none;
+}
 /*Colores*/
-.bg__nav{ background-color: #F1F1F1;}
-.s-bar{ background-color: #CC485E;}
+.s-bar{ background-color: #CC485E;
+        margin: 2rem 0;
+}
 .txt_blue{color: #364BE0;}
 /*NAVIGATOR*/
 .logo__nav{
@@ -24,14 +33,32 @@
     padding-left: 5.5rem;
 }
 .navbar-collapse{
-    padding-right: 13rem;
+    padding-right: 54
+    rem;
+}
+.navbar-nav a:hover{
+    color: #888888 !important;
+}
+
+/*fixed*/
+.margen-negativo{
+ margin-top: -70px;   
+}
+.change{
+    background-color: #f1f1f1!important;
+}
+.navbar{
+    transition: all 250ms ease-out;
 }
 /*modal popup*/
 .modal-header{
     background: none !important;
 }
 /*CAROUSEL*/
-
+.index-z{
+    z-index: 2;
+    margin-top: -70px;
+}
 .text_shadow{
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
 }
@@ -42,6 +69,9 @@
     height: 3rem;
     padding-left: 1rem;
 }
+
+/*ACORDION*/
+
 .accordion-button{
     background-color: #F1F1F1;
     color: black;
@@ -56,9 +86,6 @@
 }
 .accordion-button:not(.collapsed)::after{
     background-image: none !important;
-}
-.logo__txt{
-    font-family: 'Pacifico', cursive;
 }
 
 
