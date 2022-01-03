@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viejes Chile - Descrubre Chile .</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/" />
     <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/47d0fd349e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/47d0fd349e.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/img/favicon_logo.svg" type="image/x-icon">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon_logo.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <!-- WELCOME MODAL -->
-    <div class="modal fade my__modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div
+      class="modal fade my__modal"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header bg-transparent">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-content">
             <div class="card">
-              <img src="./assets/img/img__modal.png" class="card-img-top" alt="imagen promocional 'Temporada alta'">
+              <img
+                src="./assets/img/img__modal.png"
+                class="card-img-top"
+                alt="imagen promocional 'Temporada alta'"
+              />
             </div>
           </div>
         </div>
@@ -33,63 +61,144 @@
     </div>
     <!-- NAVVAR MENU -->
     <nav class="navbar navbar-expand-lg navbar-light bg__nav sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand logo__txt text-dark fs-4" href="#"><img class="logo__nav " src="./assets/img/favicon.svg" alt="logotipo de la empresa viajes chile">Viajes Chile</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav text-center">
-              <a class="nav-link active fw-bold fs-5 text-dark" aria-current="page" href="#">Inicio</a>
-              <a class="nav-link fw-bold fs-5 text-dark" href="#destinos">Destinos</a>
-              <a class="nav-link fw-bold fs-5 text-dark" href="#quehacer">Qué hacer</a>
-              <a class="nav-link fw-bold fs-5 text-dark" href="#contacto">Contacto</a>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand logo__txt text-dark fs-4" href="#"
+          ><img
+            class="logo__nav"
+            src="./assets/img/favicon.svg"
+            alt="logotipo de la empresa viajes chile"
+          />Viajes Chile</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav text-center">
+            <a
+              class="nav-link active fw-bold fs-5 text-dark"
+              aria-current="page"
+              href="#"
+              >Inicio</a
+            >
+            <a class="nav-link fw-bold fs-5 text-dark" href="#destinos"
+              >Destinos</a
+            >
+            <a class="nav-link fw-bold fs-5 text-dark" href="#quehacer"
+              >Qué hacer</a
+            >
+            <a class="nav-link fw-bold fs-5 text-dark" href="#contacto"
+              >Contacto</a
+            >
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
     <!-- END OF NAVBAR -->
     <!-- CAROUSEL -->
     <header class="container-fluid d-none d-lg-block p-0 margen-negativo">
-        <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/img/carousel_1.png"
+              class="d-block w-100"
+              alt="paisaje de san pedro de atacama"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="h3 text_shadow">San Pedro de Atacama</h5>
+              <p class="text_shadow">
+                Culturas ancestrales y viajeros de todo el mundo se mezclan en
+                este antiguo pueblo con calles de tierra y casas de adobe.
+              </p>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/carousel_1.png" class="d-block w-100" alt="paisaje de san pedro de atacama">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 class="h3 text_shadow">San Pedro de Atacama</h5>
-                  <p class="text_shadow">Culturas ancestrales y viajeros de todo el mundo se mezclan en este antiguo pueblo con calles de tierra y casas de adobe.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/carousel_2.png" class="d-block w-100" alt="moais de isla de pascua">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 class="h2 text_shadow">Isla de Pascua - Anakena</h5>
-                  <p class="text_shadow">Disfruta de esta playa de aguas cálidas, tranquilas y color turquesa, arenas coralinas blancas y palmeras, que posee como telón de fondo dos ahus y sus respectivos moai. Un paisaje único que no te puedes perder.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/img/carousel_3.png" class="d-block w-100" alt="torres del paine">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 class="h2 text_shadow">Torres del Paine</h5>
-                  <p class="text_shadow">El cinematográfico paisaje de la octava maravilla del mundo te dejará con la boca abierta.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/carousel_2.png"
+              class="d-block w-100"
+              alt="moais de isla de pascua"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="h2 text_shadow">Isla de Pascua - Anakena</h5>
+              <p class="text_shadow">
+                Disfruta de esta playa de aguas cálidas, tranquilas y color
+                turquesa, arenas coralinas blancas y palmeras, que posee como
+                telón de fondo dos ahus y sus respectivos moai. Un paisaje único
+                que no te puedes perder.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/img/carousel_3.png"
+              class="d-block w-100"
+              alt="torres del paine"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="h2 text_shadow">Torres del Paine</h5>
+              <p class="text_shadow">
+                El cinematográfico paisaje de la octava maravilla del mundo te
+                dejará con la boca abierta.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </header>
     <!-- END OF CAROUSEL -->
     <!-- ABOUT US -->
@@ -97,41 +206,71 @@
       <section class="row">
         <div class="col-12">
           <div class="container d-flex flex-column">
-            <h1 class="logo__txt text-center" onclick="myFunction(this, 'red')">Viajes Chile</h1>
-          <h2 class="text-center fw-light fs-5">¿Quienes Somos?</h2>
+            <h1 class="logo__txt text-center" onclick="myFunction(this, 'red')">
+              Viajes Chile
+            </h1>
+            <h2 class="text-center fw-light fs-5">¿Quienes Somos?</h2>
           </div>
         </div>
         <article class="col-12 col-lg-4">
           <div class="card my-2">
             <div class="card-body bg-warning d-none d-lg-block">
-              <h2 class="text-center"><i class="fas fa-users text-light"></i></h2>
+              <h2 class="text-center">
+                <i class="fas fa-users text-light"></i>
+              </h2>
             </div>
             <div class="card-body">
-              <h5 class="card-title">Bienvenidos a Viajes Chile </h5>
-              <h6 class="card-subtitle mb-2 text-muted">Somos tu mejor opción</h6>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nihil mollitia accusantium sequi nulla accusamus cum vel numquam cupiditate repellat est vero incidunt tempore facere ea enim laboriosam aliquid, ipsum consequuntur tempora! Inventore, assumenda cupiditate alias corrupti voluptas hic eum.</p>
+              <h5 class="card-title">Bienvenidos a Viajes Chile</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                Somos tu mejor opción
+              </h6>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloribus nihil mollitia accusantium sequi nulla accusamus cum
+                vel numquam cupiditate repellat est vero incidunt tempore facere
+                ea enim laboriosam aliquid, ipsum consequuntur tempora!
+                Inventore, assumenda cupiditate alias corrupti voluptas hic eum.
+              </p>
             </div>
           </div>
         </article>
         <article class="col-12 col-lg-4">
           <div class="card my-2">
             <div class="card-body">
-              <h5 class="card-title">Nuestra Misión </h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim labore beatae, laudantium voluptate at expedita iusto quaerat vel, earum dignissimos quam velit facere voluptatibus quidem tempora modi esse consequuntur saepe sunt laboriosam distinctio! Officia possimus ea, vero dolores labore aspernatur iure enim atque reiciendis temporibus! Harum hic officia vel voluptates!</p>
+              <h5 class="card-title">Nuestra Misión</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim
+                labore beatae, laudantium voluptate at expedita iusto quaerat
+                vel, earum dignissimos quam velit facere voluptatibus quidem
+                tempora modi esse consequuntur saepe sunt laboriosam distinctio!
+                Officia possimus ea, vero dolores labore aspernatur iure enim
+                atque reiciendis temporibus! Harum hic officia vel voluptates!
+              </p>
             </div>
             <div class="card-body bg-success d-none d-lg-block">
-              <h2 class="text-center"><i class="fas fa-meteor text-light"></i></h2>
+              <h2 class="text-center">
+                <i class="fas fa-meteor text-light"></i>
+              </h2>
             </div>
           </div>
         </article>
         <article class="col-12 col-lg-4">
           <div class="card my-2">
             <div class="card-body bg-danger d-none d-lg-block">
-              <h2 class="text-center"><i class="fas fa-handshake text-light"></i></h2>
+              <h2 class="text-center">
+                <i class="fas fa-handshake text-light"></i>
+              </h2>
             </div>
             <div class="card-body">
               <h5 class="card-title">Visión</h5>
-              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nihil mollitia accusantium sequi nulla accusamus cum vel numquam cupiditate repellat est vero incidunt tempore facere ea enim laboriosam aliquid, ipsum consequuntur tempora! Inventore, assumenda cupiditate alias corrupti voluptas hic eum. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloribus nihil mollitia accusantium sequi nulla accusamus cum
+                vel numquam cupiditate repellat est vero incidunt tempore facere
+                ea enim laboriosam aliquid, ipsum consequuntur tempora!
+                Inventore, assumenda cupiditate alias corrupti voluptas hic eum.
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+              </p>
             </div>
           </div>
         </article>
@@ -140,239 +279,490 @@
     <!-- END SECTION ABOUT US -->
     <!-- BAR -->
     <div class="container-fluid s-bar d-none d-lg-flex justify-content-center">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center align-items-center py-4 text-light">
-                <h2 class="fw-bolder m-0">Disfruta CHILE</h2>
-                <i class="fas fa-sun icon-h ps-3"></i>
-                <p class="m-0 fw-bold fs-4 ps-3">EN VERANO</p>
-                <i class="fas fa-cloud-showers-heavy icon-h ps-3"></i>
-                <p class="m-0 fw-bold fs-4 ps-3">EN INVIERNO CON</p>
-                <img class="img_bar" src="/assets/img/favicon.svg" alt="logo viajes chile">
-                <p class="logo__txt m-0 ms-2 fs-3">Viajes Chile</p>
-            </div>
+      <div class="row">
+        <div
+          class="col-12 d-flex justify-content-center align-items-center py-4 text-light"
+        >
+          <h2 class="fw-bolder m-0">Disfruta CHILE</h2>
+          <i class="fas fa-sun icon-h ps-3"></i>
+          <p class="m-0 fw-bold fs-4 ps-3">EN VERANO</p>
+          <i class="fas fa-cloud-showers-heavy icon-h ps-3"></i>
+          <p class="m-0 fw-bold fs-4 ps-3">EN INVIERNO CON</p>
+          <img
+            class="img_bar"
+            src="/assets/img/favicon.svg"
+            alt="logo viajes chile"
+          />
+          <p class="logo__txt m-0 ms-2 fs-3">Viajes Chile</p>
         </div>
+      </div>
     </div>
     <!-- END BAR -->
     <!-- FIRST SECTION FOR DESTINOS -->
     <section class="container mt-4" id="destinos">
-        <div class="row">
-            <div class="col-12"><h2 class="text-center fw-bolder fs-1" onclick="myFunction(this, 'red')">Destinos Destacados</h2></div>
-            <div class="col-12 col-md-6 col-xl-3 col-xl-3">
-                <div class="card">
-                    <img src="./assets/img/destinos_1.png" class="card-top" alt="Chiloé">
-                    <div class="card-body">
-                      <h5 class="card-title title-destinos">Sur de Chile | <strong class="txt_blue">Chiloé</strong> </h5>
-                      <p class="card-text card-text-destinos">Tierra de mitos, leyendas, tradiciones y una gastronomía incomparable. Chiloé es una isla de sorprendente riqueza cultural y natural. riqueza cultural y natural</p>
-                      <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Descubrir Lugar">Explorar</a>
-                    </div>
-                  </div>
+      <div class="row">
+        <div class="col-12">
+          <h2
+            class="text-center fw-bolder fs-1"
+            onclick="myFunction(this, 'red')"
+          >
+            Destinos Destacados
+          </h2>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 col-xl-3">
+          <div class="card">
+            <img
+              src="./assets/img/destinos_1.png"
+              class="card-top"
+              alt="Chiloé"
+            />
+            <div class="card-body">
+              <h5 class="card-title title-destinos">
+                Sur de Chile | <strong class="txt_blue">Chiloé</strong>
+              </h5>
+              <p class="card-text card-text-destinos">
+                Tierra de mitos, leyendas, tradiciones y una gastronomía
+                incomparable. Chiloé es una isla de sorprendente riqueza
+                cultural y natural. riqueza cultural y natural
+              </p>
+              <a
+                href="#"
+                class="btn btn-outline-danger btn-sm"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Descubrir Lugar"
+                >Explorar</a
+              >
             </div>
-            <div class="col-12 col-md-6 col-xl-3">
-              <div class="card">
-                  <img src="./assets/img/destinos_2.png" class="card-top" alt="Valparaíso">
-                  <div class="card-body">
-                    <h5 class="card-title title-destinos">Centro de Chile | <strong class="txt_blue">Valparaíso</strong> </h5>
-                    <p class="card-text card-text-destinos">Cautívate con la loca arquitectura de la Ciudad Patrimonio de la Humanidad. Recorre a pie sus estrechas calles, infinitas escaleras. infinitas escaleras</p>
-                    <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Descubrir Lugar">Explorar</a>
-                  </div>
-                </div>
           </div>
-          <div class="col-12 col-md-6 col-xl-3">
-            <div class="card">
-                <img src="./assets/img/destinos_3.png" class="card-top" alt="Bahía inglesa">
-                <div class="card-body" >
-                  <h5 class="card-title title-destinos">Norte de Chile | <strong class="txt_blue">Bahía Inglesa</strong></h5>
-                  <p class="card-text card-text-destinos">Si buscas playas tranquilas, arenas blancas y pozas de aguas color turquesa para relajarte, este lugar es ideal para ti.</p>
-                  <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Descubrir Lugar">Explorar</a>
-                </div>
-              </div>
         </div>
         <div class="col-12 col-md-6 col-xl-3">
           <div class="card">
-              <img src="./assets/img/destinos_3.png" class="card-top" alt="Punta arenas">
-              <div class="card-body">
-                <h5 class="card-title title-destinos">Patagonia Chile | <strong class="txt_blue">Punta Arenas</strong></h5>
-                <p class="card-text card-text-destinos">Si buscas playas tranquilas, arenas blancas y pozas de aguas color turquesa para relajarte, este lugar es ideal para ti.</p>
-                <a href="#" class="btn btn-outline-danger btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Descubrir Lugar">Explorar</a>
-              </div>
+            <img
+              src="./assets/img/destinos_2.png"
+              class="card-top"
+              alt="Valparaíso"
+            />
+            <div class="card-body">
+              <h5 class="card-title title-destinos">
+                Centro de Chile | <strong class="txt_blue">Valparaíso</strong>
+              </h5>
+              <p class="card-text card-text-destinos">
+                Cautívate con la loca arquitectura de la Ciudad Patrimonio de la
+                Humanidad. Recorre a pie sus estrechas calles, infinitas
+                escaleras. infinitas escaleras
+              </p>
+              <a
+                href="#"
+                class="btn btn-outline-danger btn-sm"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Descubrir Lugar"
+                >Explorar</a
+              >
             </div>
-      </div>
-        <!-- INICIO DE ACORDION -->
-            <div class="col-12 mt-5">
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header " id="headingOne">
-                    <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      
-                      <span class="fs-3 m-0"> Destacados | <strong>Norte</strong> <i class="ms-3 fas fa-map-marked-alt"></i></span> 
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <div class="row">
-                        <div class="col-12 col-lg-6">
-                          <div class="card">
-                            <img src="./assets/img/img_toggle_1.png" class="card-img-top" alt="Iquique">
-                            <div class="card-body">
-                              <h5 class="card-title">Iquique</h5>
-                              <p class="card-text">Pasa el día frente al mar, toma el sol en una reposadera, descubre el fondo marino del Pacífico buceando o súbete a una moto acuática para surcar las olas. En sus playas nada...</p>
-                              <a href="#" class="btn btn-primary">Descubre</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                          <div class="card">
-                            <img src="./assets/img/img_toggle_2.png" class="card-img-top" alt="Arica">
-                            <div class="card-body">
-                              <h5 class="card-title">Arica</h5>
-                              <p class="card-text">¿Adoras sentir el sol en tu piel y que la arena tibia te acune mientras descansas?
-                                Entonces debes visitar Arica. Su buen clima y playas de agua tibia invitan a disfrutar de románticas puestas de sol.</p>
-                              <a href="#" class="btn btn-primary">Descubre</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <span class="fs-3 m-0">Destacados | <strong>Centro</strong> <i class="ms-1 fas fa-map-marked-alt"></i></span>
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <div class="row">
-                        <div class="col-12 col-lg-6">
-                          <div class="card">
-                            <img src="./assets/img/img_toggle_3.png" class="card-img-top" alt="Cajón de maipo">
-                            <div class="card-body">
-                              <h5 class="card-title">Cajón del Maipo</h5>
-                              <p class="card-text">Sinónimo de aventura y deportes, el pulmón verde de Santiago es un respiro para la convulsionada vida urbana. Ponte zapatillas y prepárate a tomar un shot de adrenalina escalando sus macizos, refrescándote en sus esteros, saltando en bungee, disfrutando de la velocidad en rafting .</p>
-                              <a href="#" class="btn btn-primary">Descubre</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                          <div class="card">
-                            <img src="./assets/img/img_toggle_4.png" class="card-img-top" alt="La Parva">
-                            <div class="card-body">
-                              <h5 class="card-title">La Parva</h5>
-                              <p class="card-text">Es el único centro de ski desde el que puedes observar el valle de Santiago en toda su magnitud.
-                                Por su ubicación, La Parva ofrece fácil acceso a terrenos fuera de pista muy empinadas con quebradas profundas, y cornisas donde esquiar es reservado solo para expertos.</p>
-                              <a href="#" class="btn btn-primary">Descubre</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      <span class="fs-3 m-0">Destacados | <strong>Sur</strong> <i class="ms-5 fas fa-map-marked-alt"></i></span>
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <div class="row">
-                        <div class="col-12 col-lg-6">
-                          <div class="card">
-                            <img src="./assets/img/img_toggle_5.png" class="card-img-top" alt="Puerto varas">
-                            <div class="card-body">
-                              <h5 class="card-title">Puerto Varas</h5>
-                              <p class="card-text">Aventura y tradición chileno alemana, en medio de una impresionante naturaleza, es lo que Puerto Varas tiene guardado para ti. ¡Descubre sus mágicos rincones, su costanera que invita a caminar y a contemplar los volcanes a orillas del lago Llanquihue!</p>
-                              <a href="#" class="btn btn-primary">Descubre</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                          <div class="card">
-                            <img src="./assets/img/img_toggle_6.png" class="card-img-top" alt="Punta Arenas">
-                            <div class="card-body">
-                              <h5 class="card-title">Punta Arenas</h5>
-                              <p class="card-text">De tradición portuaria y ovina, esta puerta de entrada al continente antártico cautiva con su aire puro y sofisticada arquitectura europea.
-
-                                Navega por el Estrecho de Magallanes y asómbrate con los pingüinos que te reciben amablemente en Isla Magdalena.</p>
-                              <a href="#" class="btn btn-primary">Descubre</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- FINAL DE ACORDION -->
+          </div>
         </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="card">
+            <img
+              src="./assets/img/destinos_3.png"
+              class="card-top"
+              alt="Bahía inglesa"
+            />
+            <div class="card-body">
+              <h5 class="card-title title-destinos">
+                Norte de Chile | <strong class="txt_blue">Bahía Inglesa</strong>
+              </h5>
+              <p class="card-text card-text-destinos">
+                Si buscas playas tranquilas, arenas blancas y pozas de aguas
+                color turquesa para relajarte, este lugar es ideal para ti.
+              </p>
+              <a
+                href="#"
+                class="btn btn-outline-danger btn-sm"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Descubrir Lugar"
+                >Explorar</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <div class="card">
+            <img
+              src="./assets/img/destinos_3.png"
+              class="card-top"
+              alt="Punta arenas"
+            />
+            <div class="card-body">
+              <h5 class="card-title title-destinos">
+                Patagonia Chile | <strong class="txt_blue">Punta Arenas</strong>
+              </h5>
+              <p class="card-text card-text-destinos">
+                Si buscas playas tranquilas, arenas blancas y pozas de aguas
+                color turquesa para relajarte, este lugar es ideal para ti.
+              </p>
+              <a
+                href="#"
+                class="btn btn-outline-danger btn-sm"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Descubrir Lugar"
+                >Explorar</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- INICIO DE ACORDION -->
+        <div class="col-12 mt-5">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <span class="fs-3 m-0">
+                    Destacados | <strong>Norte</strong>
+                    <i class="ms-3 fas fa-map-marked-alt"></i
+                  ></span>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <div class="card">
+                        <img
+                          src="./assets/img/img_toggle_1.png"
+                          class="card-img-top"
+                          alt="Iquique"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Iquique</h5>
+                          <p class="card-text">
+                            Pasa el día frente al mar, toma el sol en una
+                            reposadera, descubre el fondo marino del Pacífico
+                            buceando o súbete a una moto acuática para surcar
+                            las olas. En sus playas nada...
+                          </p>
+                          <a href="#" class="btn btn-primary">Descubre</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="card">
+                        <img
+                          src="./assets/img/img_toggle_2.png"
+                          class="card-img-top"
+                          alt="Arica"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Arica</h5>
+                          <p class="card-text">
+                            ¿Adoras sentir el sol en tu piel y que la arena
+                            tibia te acune mientras descansas? Entonces debes
+                            visitar Arica. Su buen clima y playas de agua tibia
+                            invitan a disfrutar de románticas puestas de sol.
+                          </p>
+                          <a href="#" class="btn btn-primary">Descubre</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <span class="fs-3 m-0"
+                    >Destacados | <strong>Centro</strong>
+                    <i class="ms-1 fas fa-map-marked-alt"></i
+                  ></span>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <div class="card">
+                        <img
+                          src="./assets/img/img_toggle_3.png"
+                          class="card-img-top"
+                          alt="Cajón de maipo"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Cajón del Maipo</h5>
+                          <p class="card-text">
+                            Sinónimo de aventura y deportes, el pulmón verde de
+                            Santiago es un respiro para la convulsionada vida
+                            urbana. Ponte zapatillas y prepárate a tomar un shot
+                            de adrenalina escalando sus macizos, refrescándote
+                            en sus esteros, saltando en bungee, disfrutando de
+                            la velocidad en rafting .
+                          </p>
+                          <a href="#" class="btn btn-primary">Descubre</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="card">
+                        <img
+                          src="./assets/img/img_toggle_4.png"
+                          class="card-img-top"
+                          alt="La Parva"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">La Parva</h5>
+                          <p class="card-text">
+                            Es el único centro de ski desde el que puedes
+                            observar el valle de Santiago en toda su magnitud.
+                            Por su ubicación, La Parva ofrece fácil acceso a
+                            terrenos fuera de pista muy empinadas con quebradas
+                            profundas, y cornisas donde esquiar es reservado
+                            solo para expertos.
+                          </p>
+                          <a href="#" class="btn btn-primary">Descubre</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <span class="fs-3 m-0"
+                    >Destacados | <strong>Sur</strong>
+                    <i class="ms-5 fas fa-map-marked-alt"></i
+                  ></span>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <div class="card">
+                        <img
+                          src="./assets/img/img_toggle_5.png"
+                          class="card-img-top"
+                          alt="Puerto varas"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Puerto Varas</h5>
+                          <p class="card-text">
+                            Aventura y tradición chileno alemana, en medio de
+                            una impresionante naturaleza, es lo que Puerto Varas
+                            tiene guardado para ti. ¡Descubre sus mágicos
+                            rincones, su costanera que invita a caminar y a
+                            contemplar los volcanes a orillas del lago
+                            Llanquihue!
+                          </p>
+                          <a href="#" class="btn btn-primary">Descubre</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="card">
+                        <img
+                          src="./assets/img/img_toggle_6.png"
+                          class="card-img-top"
+                          alt="Punta Arenas"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Punta Arenas</h5>
+                          <p class="card-text">
+                            De tradición portuaria y ovina, esta puerta de
+                            entrada al continente antártico cautiva con su aire
+                            puro y sofisticada arquitectura europea. Navega por
+                            el Estrecho de Magallanes y asómbrate con los
+                            pingüinos que te reciben amablemente en Isla
+                            Magdalena.
+                          </p>
+                          <a href="#" class="btn btn-primary">Descubre</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- FINAL DE ACORDION -->
+      </div>
     </section>
     <!-- END OF DESTINOS -->
     <!-- INICIO QUÉ HACER -->
-      <section class="container mt-5" id="quehacer">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="text-center fw-bolder py-4" onclick="myFunction(this, 'red')">Qué Hacer</h2>
-          </div>
-          <div class="col-12 col-lg-8">
-            <div class="card mb-3 border-0">
-              <img src="./assets/img/card_que_hacer_1.png" class="card-img-top" alt="Termas geométricas">
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Termas Geométricas</h5>
-                <p class="card-text">A 16 km de Coñaripe, es un trayecto que consta de 2 horas de viaje. Es uno de los pocos lugares termales que además de ofrecer experiencias diurnas, también abre su puertas de noche. Su ubicación se encuentra en uno de los lugares más hermosos del sur de Chile, en los bosques nativos del Parque Nacional Villarrica.</p>
-                <p class="card-text"><small class="text-muted">Termas | Sur de Chile</small></p>
-              </div>
-            </div>
-          </div>
-          <div class=" col-12 col-lg-4">
-            <div class="card border-0">
-              <div class="card-body">
-                <h5 class="card-title">Termas geométricas</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Pucón | Chile</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-primary" id="buscar">
-                  Buscar la mejor opción
-                </button>
-              </div>
+    <section class="container mt-5" id="quehacer">
+      <div class="row">
+        <div class="col-12">
+          <h2
+            class="text-center fw-bolder py-4"
+            onclick="myFunction(this, 'red')"
+          >
+            Qué Hacer
+          </h2>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="card mb-3 border-0">
+            <img
+              src="./assets/img/card_que_hacer_1.png"
+              class="card-img-top"
+              alt="Termas geométricas"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Termas Geométricas</h5>
+              <p class="card-text">
+                A 16 km de Coñaripe, es un trayecto que consta de 2 horas de
+                viaje. Es uno de los pocos lugares termales que además de
+                ofrecer experiencias diurnas, también abre su puertas de noche.
+                Su ubicación se encuentra en uno de los lugares más hermosos del
+                sur de Chile, en los bosques nativos del Parque Nacional
+                Villarrica.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Termas | Sur de Chile</small>
+              </p>
             </div>
           </div>
         </div>
-      </section>
+        <div class="col-12 col-lg-4">
+          <div class="card border-0">
+            <div class="card-body">
+              <h5 class="card-title">Termas geométricas</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Pucón | Chile</h6>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button type="button" class="btn btn-primary" id="buscar">
+                Buscar la mejor opción
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- FIN QUE HACER -->
     <!-- INICIO FORM -->
     <div class="container" id="contacto">
-      <div data-tf-widget="gKrGyMx2" data-tf-iframe-props="title=Contactanos" class="form__typeform"></div><script src="//embed.typeform.com/next/embed.js"></script>
+      <div
+        data-tf-widget="gKrGyMx2"
+        data-tf-iframe-props="title=Contactanos"
+        class="form__typeform"
+      ></div>
+      <script src="//embed.typeform.com/next/embed.js"></script>
     </div>
     <!-- END FORM -->
     <!-- FOOTER -->
     <footer class="container-fluid s-bar mt-5">
-        <div class="row">
-          <div class="col-12 col-lg-4 ">
-            <p class="text-light fs-4 fw-bold mt-4 text-center">Redes Sociales</p>
-            
-            <div class="container d-flex justify-content-center">
-              
-              <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square text-light footer_icon"></i></a>
-              <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square text-light footer_icon"></i></a>
-              <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram-square text-light footer_icon"></i></a>
-              <a href="https://whatsapp.com/" target="_blank"><i class="fab fa-whatsapp-square text-light footer_icon"></i></a>
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <p class="text-light fs-4 fw-bold mt-4 text-center">Redes Sociales</p>
+
+          <div class="container d-flex justify-content-center">
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fab fa-facebook-square text-light footer_icon"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fab fa-twitter-square text-light footer_icon"></i
+            ></a>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fab fa-instagram-square text-light footer_icon"></i
+            ></a>
+            <a href="https://whatsapp.com/" target="_blank"
+              ><i class="fab fa-whatsapp-square text-light footer_icon"></i
+            ></a>
           </div>
         </div>
-        <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
-          <a href="#" class="d-flex justify-content-center align-items-center text-decoration-none">
-            <img class="logo__footer" src="./assets/img/favicon.svg" alt="">
+        <div
+          class="col-12 col-lg-4 d-flex justify-content-center align-items-center"
+        >
+          <a
+            href="#"
+            class="d-flex justify-content-center align-items-center text-decoration-none"
+          >
+            <img class="logo__footer" src="./assets/img/favicon.svg" alt="" />
             <p class="logo__txt text-light m-0 ms-3 fs-2">Viajes Chile</p>
           </a>
         </div>
-        <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center">
+        <div
+          class="col-12 col-lg-4 d-flex justify-content-center align-items-center"
+        >
           <ul class="list-group list-group-flush text-center py-3">
-            <li class="list-group-item"><span class="fw-bold fs-4">Enlaces de interes</span></li>
-            <li class="list-group-item"><a href="https://www.chile.travel/" target="_blank" class="text-decoration-none text-light">Travel Chile</a></li>
-            <li class="list-group-item"><a href="https://www.sernatur.cl/" target="_blank" class="text-decoration-none text-light">Sernatur</a></li>
-            <li class="list-group-item"><a href="https://chileestuyo.cl/" target="_blank" class="text-decoration-none text-light">Chile es tuyo</a></li>
-            <li class="list-group-item"><a href="https://patagoniamagica.com/" target="_blank" class="text-decoration-none text-light">Patagonía Magica</a></li>
+            <li class="list-group-item">
+              <span class="fw-bold fs-4">Enlaces de interes</span>
+            </li>
+            <li class="list-group-item">
+              <a
+                href="https://www.chile.travel/"
+                target="_blank"
+                class="text-decoration-none text-light"
+                >Travel Chile</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a
+                href="https://www.sernatur.cl/"
+                target="_blank"
+                class="text-decoration-none text-light"
+                >Sernatur</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a
+                href="https://chileestuyo.cl/"
+                target="_blank"
+                class="text-decoration-none text-light"
+                >Chile es tuyo</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a
+                href="https://patagoniamagica.com/"
+                target="_blank"
+                class="text-decoration-none text-light"
+                >Patagonía Magica</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -382,10 +772,14 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- BOOTSTRAP SCRIPT -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <!-- MAIN JS -->
     <script src="./assets/js/main.js"></script>
     <!-- SweetAlert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</body>
+  </body>
 </html>
