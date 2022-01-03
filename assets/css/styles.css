@@ -87,7 +87,10 @@ h2{
 .accordion-button:not(.collapsed)::after{
     background-image: none !important;
 }
-
+/*Typerform*/
+.form__typeform{
+    width:100%;height:650px;
+}
 
 /*FOOTER*/
 .footer_icon{
