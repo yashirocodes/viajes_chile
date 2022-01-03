@@ -45,7 +45,7 @@ h2{
  margin-top: -70px;   
 }
 .change{
-    background-color: #f1f1f1!important;
+    background-color: #f1f1f1 !important;
 }
 .navbar{
     transition: all 250ms ease-out;
